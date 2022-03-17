@@ -1,0 +1,9 @@
+Login:
+1. Increase the text font size
+2. Form alignment is not in middle
+3. Added extra header as 'Login form'
+4. Font color of 'Already have an account' is not matching & capitalized each word
+
+
+
+
