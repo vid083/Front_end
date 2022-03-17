@@ -1,0 +1,20 @@
+table,th,td,tr{
+    width : 10px;
+    border: 1px solid rgb(8, 8, 8);
+    border-collapse: collapse;
+}
+body{
+    background-color: white;
+}
+
+.header, .footer{
+    background-color:grey;
+    color: white;
+    padding : 1px;
+    text-align: center;
+}
+
+
+input{
+    width: 100px;
+}

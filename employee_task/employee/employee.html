@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="employee.css">
+    
+</head>
+<body>
+    <div class="header">
+    <h1>EMPLOYEE SALARY RANGE CALCULATOR</h1>
+    </div>
+    
+    <div class="table1">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Basic Salary<br>(Input)</th>
+            <th>HRA<br>(same as Basic Salary)</th>
+            <th>Medical<br>Allowance<br>(Basic Salary/3)</th>
+            <th>Conveyance<br>Allowance<br>(Basic Sal/2)</th>
+            <th>Telephone<br>Allowance<br>(Conveyance/1.5)</th>
+            <th>Other<br>Allowance<br>(2.5% of Basic)</th>
+            <th>PF<br>(25% of basic)</th>
+            <th>Professional<br>tax<br>(200 Rs constant)</th>
+            <th>Income Tax<br>(104% of (Basic * 12))</th>
+            <th>Net Salary</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" class="a" name="a" placeholder="name">
+            </td>
+            <td>
+                <input class="b" name="b" type="number" placeholder="basic salary" onchange="hra(this)">
+            </td>
+            <td >
+                <input class="c" type="number" name="c"  >
+            </td>
+            <td >
+                <input class="d" type="number" name="d"  >
+            </td>
+            <td >
+                <input class="e" name="d"  >
+            </td>
+            <td >
+                <input class="f" name="d"  >
+            </td>
+            <td >
+                <input class="g" name="d"  >
+            </td>
+            <td >
+                <input class="h" name="d" >
+            </td>
+            <td >
+                <input type="Number" class="i" name="d">
+            </td>
+            <td >
+                <input class="j" name="d" >
+            </td>
+            <td >
+                <input class="k" name="d" >
+            </td>
+         </tr>
+
+         <tr>
+            <td>
+                <input type="text" class="a" name="a" placeholder="name">
+            </td>
+            <td>
+                <input class="b" name="b" type="text" placeholder="basic salary" onchange="hra(this)">
+            </td>
+            <td >
+                <input class="c" name="c"  >
+            </td>
+            <td >
+                <input class="d" name="d"  >
+            </td>
+            <td >
+                <input class="e" name="e"  >
+            </td>
+            <td >
+                <input class="f" name="f"  >
+            </td>
+            <td >
+                <input class="g" name="g"  >
+            </td>
+            <td >
+                <input class="h" name="h" >
+            </td>
+            <td >
+                <input type="Number" class="i" name="i">
+            </td>
+            <td >
+                <input class="j" name="j" >
+            </td>
+            <td >
+                <input class="k" name="k" >
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" class="a" name="a" placeholder="name">
+            </td>
+            <td>
+                <input class="b" name="b" type="text" placeholder="basic salary" onchange="hra(this)">
+            </td>
+            <td >
+                <input class="c" name="c"  >
+            </td>
+            <td >
+                <input class="d" name="d"  >
+            </td>
+            <td >
+                <input class="e" name="e"  >
+            </td>
+            <td >
+                <input class="f" name="f"  >
+            </td>
+            <td >
+                <input class="g" name="g"  >
+            </td>
+            <td >
+                <input class="h" name="h" >
+            </td>
+            <td >
+                <input type="Number" class="i" name="i">
+            </td>
+            <td >
+                <input class="j" name="j" >
+            </td>
+            <td >
+                <input class="k" name="k" >
+            </td>
+        </tr> 
+        <tr>
+            <td>
+                <input type="text" class="a" name="a" placeholder="name">
+            </td>
+            <td>
+                <input class="b" name="b" type="text" placeholder="basic salary" onchange="hra(this)">
+            </td>
+            <td >
+                <input class="c" name="c"  >
+            </td>
+            <td >
+                <input class="d" name="d"  >
+            </td>
+            <td >
+                <input class="e" name="e"  >
+            </td>
+            <td >
+                <input class="f" name="f"  >
+            </td>
+            <td >
+                <input class="g" name="g"  >
+            </td>
+            <td >
+                <input class="h" name="h" >
+            </td>
+            <td >
+                <input type="Number" class="i" name="i">
+            </td>
+            <td >
+                <input class="j" name="j" >
+            </td>
+            <td >
+                <input class="k" name="k" >
+            </td>
+        </tr> 
+        <tr>
+            <td>
+                <input type="text" class="a" name="a" placeholder="name">
+            </td>
+            <td>
+                <input class="b" name="b" type="text" placeholder="basic salary" onchange="hra(this)">
+            </td>
+            <td >
+                <input class="c" name="c"  >
+            </td>
+            <td >
+                <input class="d" name="d"  >
+            </td>
+            <td >
+                <input class="e" name="e"  >
+            </td>
+            <td >
+                <input class="f" name="f"  >
+            </td>
+            <td >
+                <input class="g" name="g"  >
+            </td>
+            <td >
+                <input class="h" name="h" >
+            </td>
+            <td >
+                <input type="Number" class="i" name="i">
+            </td>
+            <td >
+                <input class="j" name="j" >
+            </td>
+            <td >
+                <input class="k" name="k" >
+            </td>
+        </tr> 
+
+    </table>
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+    <script src="emp2.js">  </script> 
+</body>
+
+</html>

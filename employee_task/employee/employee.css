@@ -1,0 +1,19 @@
+input{
+    width: 100px;
+}
+
+.header, .footer{
+    background-color:grey;
+    text-align: center;
+    color: black;
+    padding : 10px;
+}
+
+th{
+    background-color:grey;
+}
+
+table{
+    width: auto;
+    border-color: black;
+}
