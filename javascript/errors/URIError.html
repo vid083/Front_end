@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            try{
+                decodeURI("%%%");
+            }
+            catch(err){
+                document.write(err.name);
+            }
+            
+        </script>
+    </body>
+</html>

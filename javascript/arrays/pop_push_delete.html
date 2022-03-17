@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const arr = [1,2,3,4,5,6];
+            document.write("a : " + arr.push(7) + "<br>");
+            arr.push(8);
+            document.write("first " + arr + "<br>"); 
+            arr.pop();
+            document.write("second " + arr + "<br>");
+            delete arr[1];
+            document.getElementById("demo").innerHTML = arr;
+        </script>
+    </body>
+</html>

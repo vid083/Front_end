@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The JavaScript <i>this</i> Keyword</h1>
+<p onclick="mailto:'hey.Doe@example.com'">In this example <strong>this</strong> refers to person2, even if it is a method of person1:</p>
+
+<a href="mailto:name@email.com">Link text</a>
+<a href="tel:+919876543210%%">Link tel</a>
+
+
+<p id="demo"></p>
+
+<script>
+const person1 = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const person2 = {
+  firstName:"John",
+  lastName: "Doe",
+}
+
+let x = person1.fullName.call(person2); 
+document.getElementById("demo").innerHTML = x; 
+
+
+const uri = 'https://mozilla.org/?x=  %sd %%% %d';
+const encoded = encodeURI(uri);
+console.log(encoded);
+// expected output: "https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B"
+
+try {
+  console.log(decodeURI(encoded));
+  // expected output: "https://mozilla.org/?x=шеллы"
+} catch (e) { // catches a malformed URI
+  console.error(e);
+}
+
+
+</script>
+
+</body>
+</html>
+
+
