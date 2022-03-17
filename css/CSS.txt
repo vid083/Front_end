@@ -1,0 +1,100 @@
+body or para --> body{ } or p{ }
+
+id --> #idName
+
+class --> .className
+
+when multiple para's with same className --> p.className
+
+universal selector, every element can be affected --> * { }
+
+grouping selectors --> h1, h2, p { }
+---------------------------------------------------------------------------------
+
+BACKGROUND:
+Use the shorthand property to set the background properties in one declaration:
+When using the shorthand property the order of the property values is:
+background-color, background-image, background-repeat, background-attachment, background-position
+
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+---------------------------------------------------------------------------------
+
+The color can be set by:
+
+name - specify a color name, like "red"
+HEX - specify a HEX value, like "#ff0000"
+RGB - specify a RGB value, like "rgb(255,0,0)"
+HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+transparent
+
+---------------------------------------------------------------------------------
+
+
+for a box:
+
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+-----------------------------------------------------------------------------------
+
+The font property is a shorthand property for:
+
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+
+p {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
+
+-----------------------------------------------------------------------------------
+
+Examples of block-level elements:
+
+<div>
+<h1> - <h6>
+<p>
+<form>
+<header>
+<footer>
+<section>
+
+------------------------------------------------------------------------------------
+
+Examples of inline elements:
+
+<span>
+<a>
+<img>
+
+--------------------------------------------------------------------------
+
+The position property specifies the type of positioning method used for an element.
+
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+
+----------------------------------------------------------------------------
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+-------------------------------------------------------------------
