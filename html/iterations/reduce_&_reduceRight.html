@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var arr = [1,2,-2,9,-4,10];
+            var result = arr.reduce(myFunction);  //works left to right
+
+            function myFunction(total,value){
+                return total/value;
+            }
+            document.getElementById("demo").innerHTML = ("reduce: " +  result + "<br>");
+
+            let result1 = arr.reduceRight(myFunction);  //works right to left
+            document.write("reduceRight: " +result1);
+        </script>
+    </body>
+</html>
+
+
+
+

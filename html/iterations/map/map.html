@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            var map=new Map();
+            map.set(1,"Bhargavi");
+            map.set(2,"vidya");
+            document.write(map.size+"<br>");
+            map.forEach(display);
+            function display(key)
+            {
+                document.write(key+"<br>");
+            }
+            for(let x of map.entries())
+            {
+                document.write(x+"<br>");
+            }
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id = "demo"></p>
+        <script>
+            const arr = [1,2,3,4,5];
+            var arr1 = arr.filter(myFunction);  // prints elements satisfying the condition
+            function myFunction(value){
+                return  value > 3;
+            }
+            document.write(arr1 + "<br>");
+
+            var greater = arr.find(myFunction);    //first element satisfying this condition
+            // document.write(greater)
+
+            var indexOfGreater = arr.findIndex(myFunction);   //index of first element satisfying this condition
+            //document.write(indexOfGreater)
+            document.getElementById("demo").innerHTML = "First element greater than 3 is " + greater + " at index-" + indexOfGreater;
+
+            document.write(arr.include(2)); //check whether element present or not(true or false)
+
+        </script>
+    </body>
+</html>
+

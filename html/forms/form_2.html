@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2>Simple Form</h2>
+    <form>
+        <fieldset>
+        <legend name="info">Details</legend>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="enter your age"><br><br>
+
+        <label for="dob">DOB: </label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="female" name="male" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="male" name="male" value="Male">
+        <label for="male">Male</label><br><br>
+
+        <label for="mail">Mail:</label>
+        <input type="email" id="mail" name="email"><br><br>
+
+        <label for="tel">Tel:</label>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]{5}-[0-9]{5}"><br><br>
+
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+
+        <label for="course">Select tech: </label>
+        <select id="course" name="myCourse">
+            <optgroup label="Frontend">
+            <option value="Angular">Angular</option>
+            <option value="React" selected>React</option>
+            </optgroup>
+            <optgroup label="Backend">
+            <option value="Java">Java</option>
+            </optgroup>
+        </select><br><br>
+
+        <label>Select browser:</label>
+        <input list="group">
+        <datalist id="group">
+            <option value="google">google</option>
+            <option value="safari">safari</option>
+        </datalist><br><br>
+
+        <input type="button" onclick='alert("Hello")' value="click me"><br><br>
+
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">Please accept the terms and conditions</label><br><br>
+
+        <textarea rows="10" col="10">Declaration</textarea><br><br>
+
+        <input type="submit" value="submit">
+    </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            // for .. in --> properties of an object, arrays
+            //for (key in object){ }
+            //The index order is implementation-dependent, and array values may not be accessed in the order you expect.
+            //It is better to use a for loop, a for of loop, or Array.forEach() when the order is important.
+            const animals = ["dog", "cat", "rat", "buffalo", "pig"];
+
+            let text1 = " ";
+            for(let x in animals){
+                text1 += animals[x] +"<br>" // prints each element of array
+            };
+            document.write(text1 + "<br>")
+
+            //object
+            const person = {fname:"John", lname:"Doe", age:25};
+
+            let text2 = " ";
+            for(let x in person){
+                text2 += person[x]+"<br>"
+            };
+            document.write(text2 + "<br>")
+
+
+        </script>
+    </body>
+</html>

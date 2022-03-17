@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const arr = [1,2,3,4,5];
+
+            var arr1 = arr.map(x => x*10);  //returns a new array with the transformed data
+            document.write(arr1 + "<br>");
+
+            arr.forEach(display);   //
+            function display(value,index,ar){
+               ar[index] = value*10;
+            }
+            document.write(arr);
+        </script>
+    </body>
+</html>

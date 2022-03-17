@@ -1,0 +1,246 @@
+<!-- <!DOCTYPE html>                                 //word break oppertunnity tag(wbr)
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>tis is dddddddddddddddddddddddddddddddddddddddddddddddddddd<wbr>tttttttttttttdtddtdtdtdtdtdtdtdtdtdtdttdttddddddrrrrrrrrrrrrrrrrrrrrrrttttttttttttttttttttttttttttttttttttttttttttttttt</p> 
+   
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>                                    //video tag(video)
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video controls >
+<source src="https://www.youtube.com/watch?v=eu3ncE1TC9k" type="video/mp4">
+
+    </video>
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>                             //variable (var)
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The area of square is 1/2 * b* h </p>
+    <p>The area of square is 1/2 *<var> b </var> *<var> h </var></p>
+</body>
+</html> -->
+
+<!-- <html>                                              //unordered list(ul)
+    <head></head>
+    <body>
+        <ul style="list-style-type:circle">
+            <li>cofee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ul>
+        <ul style="list-style-type:disc">
+            <li>cofee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ul>
+        <ul style="list-style-type:square">
+            <li>cofee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ul>
+        <ul style="list-style-type:none">
+            <li>cofee :
+                <ol>
+                    <li>capichino</li>
+                    <li>latte</li>
+                    <li>expresso</li>
+                </ol>
+            </li>
+            <li>tea</li>
+            <li>milk</li>
+        </ul>
+    </body>
+</html> -->
+<!-- <html>
+<head>
+    <style>   
+    .error{
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: brown;  
+    }
+</style>
+</head>                      //unarticulated and styled differently from other (missspelled word(u tag))
+    <body>
+<p>This is a paragraph containing <u>mispelled word</u></p>
+    </body>
+</html> -->
+<!-- 
+<tt>This tag(used for teletype text |monospace text) is deprecated in html4 alternative is <kbd></kbd>  | <code></code>  | <samp></samp> |  <var></var></tt>
+
+<track> it is used to track text in video|audio files (file extensio is .vtt)
+ -->
+<!-- <html>                                      //date attribute
+    <head><title>WWW</title></head>
+    <body>
+        <p>
+            I wake up at  8:00 o clock every day 
+        </p>
+        <p>
+            I wake up at <time> 8:00 </time>o clock every day 
+        </p>
+        <p> time is<time datetime="2022-03-05 15:01"></time></p>
+        </body>
+</html> -->
+//table header ,body and footer
+<html>
+    <head>
+        <style>
+            
+            thead{
+                background-color: aliceblue;
+                color: aquamarine;
+            }
+            tbody{
+                background-color: antiquewhite;
+                color: blueviolet;
+            }
+            tfoot{
+                background-color: azure;
+                color: brown;
+            }
+            table,thead,tbody,tfoot{
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+               <tr>
+                   <th>Name</th>
+                   <th>Age</th>
+               </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                      <td>Bhargavi</td>
+                      <td>2021</td>
+                  </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                     <td>Vidya</td>
+                     <td>22</td>
+                    </tr>
+            </tfoot>
+            <tr>
+                <td>Prashanthi</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Dileep</td>
+                <td>40</td>
+            </tr>
+        </table>
+
+    </body>
+</html> 
+
+<!-- <html>                                        //text area tag in form
+    <head></head>
+    <body>
+        <form>
+            <label for="tex">Text:</label><br>
+            <textarea name="tex" id="tex" rows="20" cols="20" autofocus readonly>Hii</textarea>
+        </form>
+    </body>
+</html> -->
+
+<!-- <html>
+    <head>
+        
+    </head>                                       //template tag(<template>)
+    <body>
+        <template>
+            <h1>Image :</h1>
+            <img src="C:\Users\BHARGAVI DEGALA\Desktop\22943-8-health-image.png" alt="Save trees" height="100" width="100">
+        </template>
+        <button type="button" onclick="myfunc()">Try</button>
+        <script>
+            function myfunc()
+            {
+                var el=document.getElementsByTagName("template")[0];
+                var clon=el.content.cloneNode(true);
+                document.body.appendChild(clon);
+            }
+        </script>
+    </body>
+</html> -->
+<!-- 
+<html>                                             //details and summary tags
+    <head>
+        <style>
+details > summary{
+    background-color: aqua;
+    color:magenta;
+    border: 20px;
+}
+        </style>
+    </head>
+    <body>
+        <details>
+            <summary>
+                Vidya Ramagiri
+            </summary>
+            <p>vidya is a very very nice girl and cute girl in sparity solutions. </p>
+        </details>
+    </body>
+</html> -->
+
+<!-- <html>                    //<strike> is deprecated 
+    <head>
+
+    </head>
+    <body>
+        <p>This is  <del>wrong</del></p>
+    </body>
+</html> -->
+
+<!-- <html>                            //span is inline element and div is block level element
+    <boy>
+        <div>hii  hello good morning have a <span style="color: aqua;">nice</span> day</div>
+    </boy>
+</html> -->
+<!-- 
+<html>
+    <body>
+        <video>
+            <source src="">
+            <source src="">
+        </video>
+        <audio>
+            <source src="">
+            <source src="">
+        </audio>
+        <picture>
+            <source srcset="">
+            <source srcset="">
+
+        </picture>
+    </body>
+</html> -->
+
+

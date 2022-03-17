@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const animals = ["dog", "cat", "rat", "buffalo", "pig"];
+            var keys = animals.keys();
+
+            let text = " ";
+            for(let x of keys){ //print key or indexes of every element of an array
+                text += x +"<br>"
+            }
+            document.write(text + "<br>");
+            
+
+            let text1 = " ";
+            for(let x of animals){  //print each element of array
+                text1 += x +"<br>"
+            }
+            document.write(text1 + "<br>")
+
+            var entries = animals.entries();
+            for(let x of entries){  //prints key,value pair as an entry
+                document.write(x + "<br>");
+            }
+        </script>
+    </body>
+</html>
