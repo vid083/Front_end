@@ -1,0 +1,4 @@
+Table:
+1. Border should be light
+2. Font style of text
+3. Background color of table rows are not same
