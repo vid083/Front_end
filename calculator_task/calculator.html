@@ -1,0 +1,57 @@
+<!DocumentType>
+<html>
+    <head><title> JavaScript Calculator </title></head>
+    <body>
+        <h1> Calculator in JavaScript </h1>
+        <div class= "formstyle"><form name = "form1"><input class= "textview" name = "textview" id="entry"></form>  
+
+            <table>
+                    <tr>
+                        <td><button id = "add" onclick="calc('add')" value="add">Add</button></td>
+                        <td><button id = "mul" onclick="calc('mul')" value="mul">Mul</button></td>
+                        <td><button id = "div" onclick="calc('div')" value="div">Div</Div></button></td>
+                        <td><button id = "pow" onclick="calc('pow')" value="pow">Pow</button></td>
+                    </tr>
+            </table>
+            <script>
+            function calc(operator){
+            var s = document.getElementById("entry").value;
+            var add = document.getElementById("add").value;
+            var mul = document.getElementById("mul").value;
+            var div = document.getElementById("div").value;
+            var pow = document.getElementById("pow").value;
+
+            var n = s.split(",").filter(Number).map(Number);
+            /*
+            input = 2,3,A, ,4,
+            ['2', '3', '4'] //filter numbers
+            [ 2, 3, 4 ]    // convert strings to numbers    
+            9   //add
+            24  //mul
+            0.16666666666666666 //div
+            4096    //pow
+            */
+            var result = n.reduce(function(acc,curr){
+            if (operator == add){
+                acc = acc + curr;
+            }
+            else if (operator == mul) {
+                acc = acc * curr;
+            }
+            else if (operator == div) {
+                acc = acc / curr;
+            }
+            else if (operator == pow) {
+                acc = Math.pow(acc,curr);
+            }
+                return acc;
+            },);
+            //alert(result);
+            //document.form1.textview.text = result
+            document.getElementById("entry").value = result
+            //document.getElementById("entry").innerHTML = result 
+            }
+        </script>
+    </body>
+</html>
+
